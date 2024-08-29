@@ -1,7 +1,8 @@
 package com.betrybe.electronics;
 
 public class Television {
-    private int MAX_VOLUME = 30;
+    private static int MAX_VOLUME = 30;
+    private static double INCH_TO_CM = 2.54;
     private int volume = 0;
 
     private boolean isOn = false;
@@ -15,6 +16,9 @@ public class Television {
         this.model = model;
         this.size = size;
     }
+    public static double convertToCentimeters(double inches) {
+        return inches * INCH_TO_CM;
+    }
     public int getVolume() {
         return volume;
     }
@@ -25,6 +29,10 @@ public class Television {
 
     public String getModel() {
         return model;
+    }
+
+    public void setModel(String model) {
+        this.model = model;
     }
 
     public String getBrand() {
