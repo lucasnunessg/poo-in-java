@@ -5,9 +5,15 @@ package com.betrybe.electronics;
     String modelo;
     int ano;
 
-        public static void main(String[] args) {
-        public void Carro(marca: "Hyundai")
-        }
+    public Carro(){
+        this.ano = ano;
+        this.modelo = modelo;
+        this.marca = marca;
+    }
+
+    public void getInfo() {
+        System.out.println("Marca: " + marca + "Ano: " + ano + "Modelo: " + modelo);
+    }
     }
 
 
