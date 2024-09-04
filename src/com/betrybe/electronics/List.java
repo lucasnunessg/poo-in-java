@@ -1,6 +1,7 @@
 package com.betrybe.electronics;
 
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.Collections;
 
 public class List {
@@ -14,5 +15,8 @@ public class List {
         System.out.println(numeros); //ordenada por inserção
         Collections.sort(numeros); //colocando em ordem numerica
         System.out.println(numeros);
+
     }
+
+
 }
